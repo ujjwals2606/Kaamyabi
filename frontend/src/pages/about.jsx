@@ -105,28 +105,86 @@ const About = () => {
 
       {/* --- LEADERSHIP --- */}
       <section className="py-5 bg-white">
-        <div className="container text-center">
-          <h2 className="fw-bold mb-5" style={{ color: theme.navy }}>Our Leadership</h2>
-          <div className="row justify-content-center">
-            <div className="col-md-5 col-lg-4">
-              <div className="card border-0 shadow p-4" style={{ borderRadius: "20px" }}>
-                <div 
-                  className="mx-auto mb-3 d-flex align-items-center justify-content-center" 
-                  style={{ width: "100px", height: "100px", backgroundColor: "#f0f4f8", borderRadius: "50%", fontSize: "3rem" }}
-                >
-                  👤
-                </div>
-                <h5 className="fw-bold mb-1">Tuba Fatima</h5>
-                <p className="text-uppercase fw-bold small mb-3" style={{ color: theme.gold, letterSpacing: "1px" }}>Founder & Lead Architect</p>
-                <p className="text-muted" style={{ fontSize: "0.95rem" }}>
-                  Passionate about building AI-driven education platforms and
-                  pioneering digital-first learning experiences.
-                </p>
-              </div>
-            </div>
+  <div className="container text-center">
+    <h2 className="fw-bold mb-5" style={{ color: theme.navy }}>
+      Our Leadership
+    </h2>
+
+    <div className="row justify-content-center">
+
+      {/* Tuba Fatima */}
+      <div className="col-md-5 col-lg-4">
+        <div
+          className="card border-0 shadow p-4"
+          style={{ borderRadius: "20px" }}
+        >
+          <div
+            className="mx-auto mb-3 d-flex align-items-center justify-content-center"
+            style={{
+              width: "100px",
+              height: "100px",
+              backgroundColor: "#f0f4f8",
+              borderRadius: "50%",
+              fontSize: "3rem",
+            }}
+          >
+            👤
           </div>
+
+          <h5 className="fw-bold mb-1">Tuba Fatima</h5>
+
+          <p
+            className="text-uppercase fw-bold small mb-3"
+            style={{ color: theme.gold, letterSpacing: "1px" }}
+          >
+            Founder & Lead Architect
+          </p>
+
+          <p className="text-muted" style={{ fontSize: "0.95rem" }}>
+            Passionate about building AI-driven education platforms and
+            pioneering digital-first learning experiences.
+          </p>
         </div>
-      </section>
+      </div>
+
+      {/* Ujjwal Singh */}
+      <div className="col-md-5 col-lg-4">
+        <div
+          className="card border-0 shadow p-4"
+          style={{ borderRadius: "20px" }}
+        >
+          <div
+            className="mx-auto mb-3 d-flex align-items-center justify-content-center"
+            style={{
+              width: "100px",
+              height: "100px",
+              backgroundColor: "#f0f4f8",
+              borderRadius: "50%",
+              fontSize: "3rem",
+            }}
+          >
+            👨‍💻
+          </div>
+
+          <h5 className="fw-bold mb-1">Ujjwal Singh</h5>
+
+          <p
+            className="text-uppercase fw-bold small mb-3"
+            style={{ color: theme.gold, letterSpacing: "1px" }}
+          >
+            Co-Founder & Technical Lead
+          </p>
+
+          <p className="text-muted" style={{ fontSize: "0.95rem" }}>
+            Focused on building robust backend systems and managing core
+            technical architecture for scalable applications.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* --- FINAL CALL TO ACTION --- */}
       <section
