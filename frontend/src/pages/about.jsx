@@ -163,7 +163,7 @@ const About = () => {
               fontSize: "3rem",
             }}
           >
-            👨‍💻
+            👤
           </div>
 
           <h5 className="fw-bold mb-1">Ujjwal Singh</h5>
