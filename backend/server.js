@@ -14,7 +14,7 @@ connectDB();
 // ✅ CORS
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://dashing-pithivier-172ce3.netlify.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })

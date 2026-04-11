@@ -2,7 +2,7 @@ import axios from "axios";
 
 // ================= BASE CONFIG =================
 const API = axios.create({
-  baseURL: "https://kaamyabi.onrender.com/api",
+  baseURL: "https://kaamyabi-backend.onrender.com/api",
 });
 
 // ================= TOKEN INTERCEPTOR =================
