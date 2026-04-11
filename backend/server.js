@@ -14,7 +14,7 @@ connectDB();
 // ✅ CORS
 app.use(
   cors({
-    origin: "https://kaamyabi00.onrender.com/",
+    origin: "http://localhost:5173",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
