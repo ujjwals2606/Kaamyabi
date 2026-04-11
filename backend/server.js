@@ -12,10 +12,23 @@ connectDB();
 // ================= MIDDLEWARE =================
 
 // ✅ CORS
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://dashing-pithivier-172ce3.netlify.app"
+];
+
 app.use(
   cors({
-    origin: "https://dashing-pithivier-172ce3.netlify.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: function (origin, callback) {
+      // allow requests with no origin (like Postman)
+      if (!origin) return callback(null, true);
+
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
@@ -54,6 +67,14 @@ app.use((req, res) => {
     msg: "Route not found",
   });
 });
+
+
+// ================= temporary =================
+app.use((req, res, next) => {
+  console.log("Origin:", req.headers.origin);
+  next();
+});
+
 
 // ================= GLOBAL ERROR HANDLER =================
 app.use((err, req, res, next) => {
