@@ -14,7 +14,7 @@ connectDB();
 // ✅ CORS
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://dashing-pithivier-172ce3.netlify.app"
+  "https://kaamyabi.netlify.app"
 ];
 
 app.use(
