@@ -13,8 +13,8 @@ connectDB();
 
 // ✅ CORS
 const allowedOrigins = [
-  "http://localhost:5173",
-  "https://kaamyabi.netlify.app"
+  // "http://localhost:5173",
+  "https://kaamyabi.netlify.app/"
 ];
 
 app.use(
