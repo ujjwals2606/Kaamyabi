@@ -77,7 +77,7 @@ app.use((req, res, next) => {
 
 
 
-app.options("*", cors());
+// app.options("*", cors());
 
 // ================= GLOBAL ERROR HANDLER =================
 app.use((err, req, res, next) => {
