@@ -14,7 +14,7 @@ connectDB();
 // ✅ CORS
 const allowedOrigins = [
   // "http://localhost:5173",
-  "https://kaamyabi.netlify.app/"
+  "https://kaamyabi.netlify.app"
 ];
 
 app.use(
@@ -75,6 +75,9 @@ app.use((req, res, next) => {
   next();
 });
 
+
+
+app.options("*", cors());
 
 // ================= GLOBAL ERROR HANDLER =================
 app.use((err, req, res, next) => {
